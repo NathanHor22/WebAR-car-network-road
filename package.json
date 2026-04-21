@@ -1,0 +1,31 @@
+{
+  "name": "webar-car-network-road",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview --https",
+    "serve": "zapworks serve dist --lan"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/NathanHor22/WebAR-car-network-road.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/NathanHor22/WebAR-car-network-road/issues"
+  },
+  "homepage": "https://github.com/NathanHor22/WebAR-car-network-road#readme",
+  "dependencies": {
+    "@zappar/zappar-threejs": "^4.3.0",
+    "three": "^0.184.0"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-basic-ssl": "^2.3.0",
+    "vite": "^8.0.9"
+  }
+}

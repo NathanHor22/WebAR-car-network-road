@@ -1,0 +1,12 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(python3 -c \"import json,sys; d=json.load\\(sys.stdin\\); print\\('main:', d.get\\('main'\\)\\); print\\('module:', d.get\\('module'\\)\\); print\\('browser:', d.get\\('browser'\\)\\)\")",
+      "Bash(node -e \"const d=require\\('/dev/stdin'\\); console.log\\('main:', d.main\\); console.log\\('module:', d.module\\);\")",
+      "Bash(node -e \"const d=require\\('./node_modules/@zappar/zappar-threejs/package.json'\\); console.log\\('main:', d.main\\);\")",
+      "Bash(node -e \"const p=require\\('./node_modules/three/package.json'\\); console.log\\(p.version\\);\")",
+      "Bash(npm install *)",
+      "Bash(npx vite *)"
+    ]
+  }
+}
