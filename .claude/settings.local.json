@@ -6,7 +6,9 @@
       "Bash(node -e \"const d=require\\('./node_modules/@zappar/zappar-threejs/package.json'\\); console.log\\('main:', d.main\\);\")",
       "Bash(node -e \"const p=require\\('./node_modules/three/package.json'\\); console.log\\(p.version\\);\")",
       "Bash(npm install *)",
-      "Bash(npx vite *)"
+      "Bash(npx vite *)",
+      "Bash(zapworks --help)",
+      "Bash(zapworks train *)"
     ]
   }
 }
