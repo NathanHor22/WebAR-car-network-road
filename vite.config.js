@@ -1,8 +1,9 @@
 import { defineConfig } from 'vite';
-import basicSsl from '@vitejs/plugin-basic-ssl';
 
-export default defineConfig({
-  plugins: [basicSsl()],
+export default defineConfig(({ command }) => ({
+  plugins: command === 'serve'
+    ? [import('@vitejs/plugin-basic-ssl').then((m) => m.default())]
+    : [],
   server: {
     https: true,
     port: 8080,
@@ -13,4 +14,4 @@ export default defineConfig({
     assetsInlineLimit: 0,
   },
   assetsInclude: ['**/*.zpt', '**/*.wasm'],
-});
+}));
